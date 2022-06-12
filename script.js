@@ -6,23 +6,11 @@ function iniciar(){
     //con esto oculto la tabla al principio
     div = document.getElementById('tabla');
     div.style.display = 'none';
-
-    // document.getElementById('titulo').style.display='none';
-    // document.getElementById("pesoInferior").style.display='none';
-    // document.getElementById('Normal').style.display='none';
-    // document.getElementById('pesoSuperior').style.display='none';
-    // document.getElementById('obesidad').style.display='none';
-
     
-
     var btnCalcular = document.getElementById("btnCalcular");
     btnCalcular.addEventListener("click", clickBtnCalcular);
-    
-    
+   
 }
-
-
-
 
 function clickBtnCalcular(){
 var txtPeso = document.getElementById("txtPeso");
@@ -38,6 +26,7 @@ if(isNaN(altura)){
 if(isNaN(peso)){
     alert("El peso no es un numero");
 }
+    
 // validacion de que la altura este en centimetros y dentro convierto los centimetros a metros
 if(Number.isInteger(altura)){
     var alturaEnMetros = (altura / 100);
@@ -56,32 +45,8 @@ if(altura > 272 || altura < 10){
     return 0;
 }
 
-
-
-// validacion de que la altura este en centimetros y dentro convierto los centimetros a metros
-    // if (altura % 1 != 0) {
-    //     // conversion de cm a metros
-    //     var alturaEnMetros = (altura / 100);
-       
-    // } else {
-        
-    //     return alert("La altura debe estar en cm");
-        
-    // }
-
     
 var imc = peso / (alturaEnMetros * alturaEnMetros);
-
-//con la funcion toFixed(x) defino cuantos decimales quiero en el resultado
-//con document.getElementById(nombre del id).value = una variable hago que ese resultado se muestre en el input del resultado
-// document.getElementById("txtResultado").value = imc.toFixed(2) + " " + "Usted tiene Obesidad";
-
-// //con esto hago que se muestre la tabla al hacer click
-// div = document.getElementById('tabla');
-// div.style.display = '';
-
-
-
 
 if(imc < 18.5){
 //con la funcion toFixed(x) defino cuantos decimales quiero en el resultado
