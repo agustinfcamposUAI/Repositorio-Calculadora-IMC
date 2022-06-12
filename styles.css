@@ -1,0 +1,18 @@
+
+  h1{
+      margin-left: 400px;
+  }
+  .card-body {
+    margin-left: 500px;
+   }
+  .form {
+    width: 450px;
+  }
+ 
+#tabla{
+   margin-left: 400px;
+    text-align: center; /* Para que deje el texto dentro de la tabla hacia la izquierda */
+}
+body{
+  margin-top: 75px;
+}
